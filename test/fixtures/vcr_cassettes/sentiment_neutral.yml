@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.apphera.com/1/sentiments?api_key=8w7d64oqweryiqweo87qnxtqwi47xqn3i4tisq7
+    body:
+      encoding: UTF-8
+      string: body=Today%20it's%2020%20degrees%20outside%20and%20that's%20it&lang=en
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.1
+      Date:
+      - Thu, 02 Aug 2012 16:38:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '43'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"3c1d01e46834ab4bec5b8aec9135ef7c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4fc8089f40269153def66becb77b2b82
+      X-Runtime:
+      - '0.005184'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: ! '{"response":{"polarity":0,"sentiment":0.0}}'
+    http_version: 
+  recorded_at: Thu, 02 Aug 2012 16:38:54 GMT
+recorded_with: VCR 2.2.4

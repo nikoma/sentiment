@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.apphera.com/1/sentiments?api_key=8w7d64oqweryiqweo87qnxtqwi47xqn3i4tisq7
+    body:
+      encoding: UTF-8
+      string: body=Wir%20freuen%20und%20%C3%BCber%20Umlaute%20die%20S%C3%A4tze%20%C3%A4ndern&lang=de
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.1
+      Date:
+      - Thu, 02 Aug 2012 16:41:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '46'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"16a9bceff8483260f21ce3bf113968bb"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d178c5dcd8af6c2d624607c5b30e2942
+      X-Runtime:
+      - '0.005309'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: ! '{"response":{"polarity":1,"sentiment":0.2198}}'
+    http_version: 
+  recorded_at: Thu, 02 Aug 2012 16:41:21 GMT
+recorded_with: VCR 2.2.4

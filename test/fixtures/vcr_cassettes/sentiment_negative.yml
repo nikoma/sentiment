@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.apphera.com/1/sentiments?api_key=8w7d64oqweryiqweo87qnxtqwi47xqn3i4tisq7
+    body:
+      encoding: UTF-8
+      string: body=I%20hate%20some%20random%20thing&lang=en
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.1
+      Date:
+      - Thu, 02 Aug 2012 16:38:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '48'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"45fc0357c8bd5b70db4f8bce584b7df5"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d4c7705b2052a740f711365f74dc22f6
+      X-Runtime:
+      - '0.005970'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: ! '{"response":{"polarity":-1,"sentiment":-0.0625}}'
+    http_version: 
+  recorded_at: Thu, 02 Aug 2012 16:38:53 GMT
+recorded_with: VCR 2.2.4

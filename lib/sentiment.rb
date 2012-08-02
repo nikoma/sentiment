@@ -1,5 +1,26 @@
-require "sentiment/version"
+require 'rubygems'
+gem 'mash'
+require 'mash'
+gem 'httparty'
+require 'httparty'
+
+
+class APIKeyNotSet   < StandardError; end
 
 module Sentiment
-  # Your code goes here...
+  
+  # Get your API key from https://developer.apphera.com
+  def self.api_key
+    raise APIKeyNotSet if @api_key.nil?
+    @api_key
+  end
+  
+  def self.api_key=(api_key)
+    @api_key = api_key
+  end
+  
 end
+
+directory = File.expand_path(File.dirname(__FILE__))
+
+require File.join(directory, 'sentiment', 'client')
