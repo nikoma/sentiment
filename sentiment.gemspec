@@ -4,7 +4,7 @@ require File.expand_path('../lib/sentiment/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Nikolai Manek"]
   gem.email         = ["niko.manek@gmail.com"]
-  gem.description   = %q{A very simple to use sentiment analaysis tool}
+  gem.description   = %q{A very simple to use sentiment analysis tool}
   gem.summary       = %q{Sentiment analysis}
   gem.homepage      = "https://github.com/nikoma/sentiment"
 

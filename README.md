@@ -20,7 +20,8 @@ Or install it yourself as:
 
 Sentiment Analysis
 
-require 'sentiment'
+require 'sentiment'  
+
 client = Sentiment::Client.new("8w7d64oqweryiqweo87qnxtqwi47xqn3i4tisq7")
 
 sentiment = client.sentiment("I love Ruby!","en")  
