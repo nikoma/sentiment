@@ -22,7 +22,7 @@ Sentiment Analysis
 
 require 'sentiment'  
 
-client = Sentiment::Client.new("8w7d64oqweryiqweo87qnxtqwi47xqn3i4tisq7")
+client = Sentiment::Client.new("e23d80483193fddd72a2c364a72cd738")
 
 sentiment = client.sentiment("I love Ruby!","en")  
 `=> 1`
